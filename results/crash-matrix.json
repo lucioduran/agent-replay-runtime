@@ -1,0 +1,1029 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "timestamp_utc": "2026-10-21T21:29:04.177785+00:00",
+    "python": "3.11.13",
+    "sqlite": "3.50.4",
+    "platform": "macOS-26.7.1-x86_64-i386-64bit",
+    "hardware": {
+      "machine": "x86_64",
+      "processor": "i386",
+      "logical_cpus": 16,
+      "machdep.cpu.brand_string": "Intel(R) Xeon(R) W-3223 CPU @ 3.50GHz",
+      "hw.memsize": "51539607552",
+      "hw.ncpu": "16"
+    },
+    "revision": "6f711cb717c0f892f8674c16dc3115f83ec0ab34",
+    "source_sha256": {
+      "agent_replay/__init__.py": "39979c4ff43d0f08f6775a7ba5801e31bc070246b0a9e531faf2bec785a68bf4",
+      "agent_replay/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "agent_replay/cli.py": "7e672db88417cfa6252f5ddecb102607ea557b1336e0069ba54e411d02486248",
+      "agent_replay/ledger.py": "255d0b7a506f3bf5aa61e49ac157a9dc52cfe1e8508b8c3697ae9891145763b7",
+      "agent_replay/model.py": "dd0b42603e92d80f3e90a8771f7ae78c14fa8546477d736b8e4a89598feb9119",
+      "agent_replay/runtime.py": "f1ad8eaaaa0a6f907c187b7b7c626a5cda99baba90f170a7d2e01425d206a1e7",
+      "agent_replay/storage.py": "b521428f146c9715ee91f1a7b470e98ea7468785e7d8401bab3fa7e7552e0f1e",
+      "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "experiments/reproduce.py": "7228bcf4987f73370c53e8b3917d594975d049e3686f2f27b216ca0efde0d5cc",
+      "experiments/verify.py": "f8996799f7d776ea50980839bbe0a0b885e360da4d956a6f2bbcda349ba3a7ed",
+      "experiments/worker.py": "5886e7688d18834697eb162a58350bb771c434e0bba0446749ae1a20d820dfa0"
+    },
+    "api_calls": 0,
+    "api_cost_usd": 0,
+    "inference": "none",
+    "seed": null,
+    "threads_per_worker": 1,
+    "worker_concurrency": 1,
+    "limits": "Fixed correctness matrix; no throughput, power-loss, remote-service or security claim"
+  },
+  "cases": [
+    {
+      "mode": "idempotent",
+      "stage": "after_request",
+      "termination": {
+        "checkpoint": "after_request",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_request"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_request/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "kind": "requested",
+          "previous": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "seq": 1
+        }
+      ],
+      "effects_before": [],
+      "recovery": {
+        "returncode": 0,
+        "stdout": {
+          "run": "experiment",
+          "results": {
+            "effect": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            }
+          },
+          "pending": null,
+          "finished": true
+        },
+        "stderr": ""
+      },
+      "reconciliation": null,
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_request/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "kind": "requested",
+          "previous": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "seq": 1
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "00b7287c4f27d4f4f963b2250af05bfb65cb0a003ee4583ce9ca0a5a297bd465",
+          "kind": "retried",
+          "previous": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "seq": 2
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "4407ea7a645981c7b4188f2dd6995447e2b047ad87269dd1b71966c2d6396edb",
+          "kind": "completed",
+          "previous": "00b7287c4f27d4f4f963b2250af05bfb65cb0a003ee4583ce9ca0a5a297bd465",
+          "seq": 3
+        },
+        {
+          "data": {},
+          "hash": "b2f2a329a76cba7cfc5382ba03969cb5a2193233cb9aa7693a78bb367ed8893f",
+          "kind": "finished",
+          "previous": "4407ea7a645981c7b4188f2dd6995447e2b047ad87269dd1b71966c2d6396edb",
+          "seq": 4
+        }
+      ],
+      "effects_after": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "final_state": {
+        "run": "experiment",
+        "results": {
+          "effect": {
+            "effect_id": 1,
+            "payload": {
+              "message": "effect"
+            }
+          }
+        },
+        "pending": null,
+        "finished": true
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": true
+    },
+    {
+      "mode": "idempotent",
+      "stage": "after_effect",
+      "termination": {
+        "checkpoint": "after_effect",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_effect"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_effect/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "kind": "requested",
+          "previous": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "seq": 1
+        }
+      ],
+      "effects_before": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "recovery": {
+        "returncode": 0,
+        "stdout": {
+          "run": "experiment",
+          "results": {
+            "effect": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            }
+          },
+          "pending": null,
+          "finished": true
+        },
+        "stderr": ""
+      },
+      "reconciliation": null,
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_effect/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "kind": "requested",
+          "previous": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "seq": 1
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "f8303fac12ec0f9d26a4d85feb4bd324a2a28e4fa9d19b4ef20738e33e7058b3",
+          "kind": "retried",
+          "previous": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "seq": 2
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "6ffe5544cc16712a63bd988d8177a79352fcebef617dee1e53e51a9786ae8ba7",
+          "kind": "completed",
+          "previous": "f8303fac12ec0f9d26a4d85feb4bd324a2a28e4fa9d19b4ef20738e33e7058b3",
+          "seq": 3
+        },
+        {
+          "data": {},
+          "hash": "4932eb223daf72381f25183dbe59662ea37f8f81a9ee425635a258f0f0a405bf",
+          "kind": "finished",
+          "previous": "6ffe5544cc16712a63bd988d8177a79352fcebef617dee1e53e51a9786ae8ba7",
+          "seq": 4
+        }
+      ],
+      "effects_after": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "final_state": {
+        "run": "experiment",
+        "results": {
+          "effect": {
+            "effect_id": 1,
+            "payload": {
+              "message": "effect"
+            }
+          }
+        },
+        "pending": null,
+        "finished": true
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": true
+    },
+    {
+      "mode": "idempotent",
+      "stage": "after_ack",
+      "termination": {
+        "checkpoint": "after_ack",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_ack"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_ack/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "kind": "requested",
+          "previous": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "seq": 1
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "kind": "completed",
+          "previous": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "seq": 2
+        }
+      ],
+      "effects_before": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "recovery": {
+        "returncode": 0,
+        "stdout": {
+          "run": "experiment",
+          "results": {
+            "effect": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            }
+          },
+          "pending": null,
+          "finished": true
+        },
+        "stderr": ""
+      },
+      "reconciliation": null,
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_ack/effects.db:True"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": true,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "kind": "requested",
+          "previous": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "seq": 1
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "kind": "completed",
+          "previous": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "seq": 2
+        },
+        {
+          "data": {},
+          "hash": "ef11efa2eedbbce0291816ca1a5571d37a59d3070f3a0e6699f7247c4386a4ca",
+          "kind": "finished",
+          "previous": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "seq": 3
+        }
+      ],
+      "effects_after": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "final_state": {
+        "run": "experiment",
+        "results": {
+          "effect": {
+            "effect_id": 1,
+            "payload": {
+              "message": "effect"
+            }
+          }
+        },
+        "pending": null,
+        "finished": true
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": true
+    },
+    {
+      "mode": "unsafe",
+      "stage": "after_request",
+      "termination": {
+        "checkpoint": "after_request",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_request"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_request/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "47dd25d1ae2398dbb0bd2a385341ebcaa1f10007fb1cd285fa4af0f5f93a2839",
+          "kind": "requested",
+          "previous": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "seq": 1
+        }
+      ],
+      "effects_before": [],
+      "recovery": {
+        "returncode": 3,
+        "stdout": {
+          "uncertain": "Step effect requires external reconciliation"
+        },
+        "stderr": ""
+      },
+      "reconciliation": null,
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_request/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "47dd25d1ae2398dbb0bd2a385341ebcaa1f10007fb1cd285fa4af0f5f93a2839",
+          "kind": "requested",
+          "previous": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "seq": 1
+        }
+      ],
+      "effects_after": [],
+      "final_state": {
+        "run": "experiment",
+        "results": {},
+        "pending": {
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "step": "effect"
+        },
+        "finished": false
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": false
+    },
+    {
+      "mode": "unsafe",
+      "stage": "after_effect",
+      "termination": {
+        "checkpoint": "after_effect",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_effect"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_effect/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "kind": "requested",
+          "previous": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "seq": 1
+        }
+      ],
+      "effects_before": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "recovery": [
+        {
+          "returncode": 3,
+          "stdout": {
+            "uncertain": "Step effect requires external reconciliation"
+          },
+          "stderr": ""
+        },
+        {
+          "returncode": 0,
+          "stdout": {
+            "run": "experiment",
+            "results": {
+              "effect": {
+                "effect_id": 1,
+                "payload": {
+                  "message": "effect"
+                }
+              }
+            },
+            "pending": null,
+            "finished": true
+          },
+          "stderr": ""
+        }
+      ],
+      "reconciliation": {
+        "result": {
+          "effect_id": 1,
+          "payload": {
+            "message": "effect"
+          }
+        },
+        "evidence": "Experiment verified effect 1 in the independent SQLite ledger"
+      },
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_effect/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "kind": "requested",
+          "previous": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "seq": 1
+        },
+        {
+          "data": {
+            "evidence": "Experiment verified effect 1 in the independent SQLite ledger",
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "d48f7db23064b5b0d9a453df51fe6071b24219957cedd32c119119522bf94600",
+          "kind": "resolved",
+          "previous": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "seq": 2
+        },
+        {
+          "data": {},
+          "hash": "5ecba9e41244a244bb05a6bf214315faec0eef52e11bd62aa9b5b72994482311",
+          "kind": "finished",
+          "previous": "d48f7db23064b5b0d9a453df51fe6071b24219957cedd32c119119522bf94600",
+          "seq": 3
+        }
+      ],
+      "effects_after": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "final_state": {
+        "run": "experiment",
+        "results": {
+          "effect": {
+            "effect_id": 1,
+            "payload": {
+              "message": "effect"
+            }
+          }
+        },
+        "pending": null,
+        "finished": true
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": true
+    },
+    {
+      "mode": "unsafe",
+      "stage": "after_ack",
+      "termination": {
+        "checkpoint": "after_ack",
+        "returncode": -9,
+        "handshake": {
+          "checkpoint": "after_ack"
+        },
+        "remaining_stdout": "",
+        "stderr": ""
+      },
+      "events_before": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_ack/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "kind": "requested",
+          "previous": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "seq": 1
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "kind": "completed",
+          "previous": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "seq": 2
+        }
+      ],
+      "effects_before": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "recovery": {
+        "returncode": 0,
+        "stdout": {
+          "run": "experiment",
+          "results": {
+            "effect": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            }
+          },
+          "pending": null,
+          "finished": true
+        },
+        "stderr": ""
+      },
+      "reconciliation": null,
+      "events_after": [
+        {
+          "data": {
+            "bindings": {
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_ack/effects.db:False"
+            },
+            "plan": [
+              {
+                "args": {
+                  "message": "effect"
+                },
+                "id": "effect",
+                "idempotent": false,
+                "tool": "ledger"
+              }
+            ],
+            "run": "experiment",
+            "version": 1
+          },
+          "hash": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "kind": "created",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 0
+        },
+        {
+          "data": {
+            "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+            "step": "effect"
+          },
+          "hash": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "kind": "requested",
+          "previous": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "seq": 1
+        },
+        {
+          "data": {
+            "result": {
+              "effect_id": 1,
+              "payload": {
+                "message": "effect"
+              }
+            },
+            "step": "effect"
+          },
+          "hash": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "kind": "completed",
+          "previous": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "seq": 2
+        },
+        {
+          "data": {},
+          "hash": "695b24ad2cbf68cda0fefb9594fb4591011c8710222e9ef0d5ff12b3db86148e",
+          "kind": "finished",
+          "previous": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "seq": 3
+        }
+      ],
+      "effects_after": [
+        {
+          "effect_id": 1,
+          "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
+          "payload": {
+            "message": "effect"
+          }
+        }
+      ],
+      "final_state": {
+        "run": "experiment",
+        "results": {
+          "effect": {
+            "effect_id": 1,
+            "payload": {
+              "message": "effect"
+            }
+          }
+        },
+        "pending": null,
+        "finished": true
+      },
+      "replay_consistent": true,
+      "repeat_resume_unchanged": true
+    }
+  ],
+  "baseline": {
+    "description": "Blindly retry unsafe effect after lost acknowledgment",
+    "termination": {
+      "checkpoint": "after_effect",
+      "returncode": -9,
+      "handshake": {
+        "checkpoint": "after_effect"
+      },
+      "remaining_stdout": "",
+      "stderr": ""
+    },
+    "recovery": {
+      "returncode": 0,
+      "stdout": {
+        "finished": true
+      },
+      "stderr": ""
+    },
+    "effects": [
+      {
+        "effect_id": 1,
+        "key": "baseline-key",
+        "payload": {
+          "message": "effect"
+        }
+      },
+      {
+        "effect_id": 2,
+        "key": "baseline-key",
+        "payload": {
+          "message": "effect"
+        }
+      }
+    ]
+  },
+  "control": {
+    "uninterrupted_effects": 1
+  },
+  "summary": {
+    "crash_cases": 6,
+    "idempotent_recovered_without_duplicates": 3,
+    "unsafe_blocked": 2,
+    "unsafe_reconciled_from_evidence": 1,
+    "baseline_effects": 2
+  }
+}
