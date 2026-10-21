@@ -1,0 +1,4 @@
+[
+  {"id": "record-decision", "tool": "ledger.v1", "args": {"message": "Decision recorded"}, "idempotent": true},
+  {"id": "record-completion", "tool": "ledger.v1", "args": {"message": "Workflow complete"}, "idempotent": true}
+]
