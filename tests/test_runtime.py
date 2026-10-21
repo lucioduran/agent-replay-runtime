@@ -152,6 +152,47 @@ class RuntimeTests(unittest.TestCase):
         with self.assertRaises(ReplayError):
             replay(events)
 
+    def test_plan_boolean_and_number_drift_rejected(self):
+        self.runtime.submit("run", plan())
+        changed = [{**plan()[0], "args": {"n": True}}]
+        with self.assertRaises(ReplayError):
+            self.runtime.submit("run", changed)
+
+    def test_repeated_interrupted_retries_keep_one_effect(self):
+        self.runtime.submit("run", plan())
+
+        def interrupt(stage):
+            if stage == "after_effect":
+                raise TimeoutError("Lost acknowledgment")
+
+        for _ in range(3):
+            with self.assertRaises(TimeoutError):
+                self.runtime.resume("run", interrupt)
+        self.assertTrue(self.runtime.resume("run").finished)
+        self.assertEqual(len(self.tool.effects()), 1)
+
+    def test_concurrent_adapter_calls_share_receipt(self):
+        from concurrent.futures import ThreadPoolExecutor
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda _: self.tool.invoke("key", {"n": 1}), range(4)))
+        self.assertEqual(results, [results[0]] * 4)
+        self.assertEqual(len(self.tool.effects()), 1)
+
+    def test_storage_run_identity_mismatch(self):
+        self.runtime.submit("run", plan())
+        with sqlite3.connect(self.runtime.store.path) as db:
+            db.execute("UPDATE events SET run='other'")
+        with self.assertRaises(ReplayError):
+            self.runtime.inspect("other")
+
+    def test_malformed_event_object(self):
+        self.runtime.submit("run", plan())
+        with sqlite3.connect(self.runtime.store.path) as db:
+            db.execute("UPDATE events SET event='null'")
+        with self.assertRaises(ReplayError):
+            self.runtime.inspect("run")
+
 
 class ValidationTests(unittest.TestCase):
     def test_invalid_plans(self):
