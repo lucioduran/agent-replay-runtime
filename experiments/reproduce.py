@@ -139,7 +139,8 @@ def metadata():
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
         ).strip(),
         "source_sha256": {
-            str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files
+            p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in files
         },
         "api_calls": 0,
         "api_cost_usd": 0,

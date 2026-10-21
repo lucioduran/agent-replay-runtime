@@ -1,6 +1,5 @@
 import copy
 import json
-import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,7 +7,7 @@ from pathlib import Path
 from agent_replay import BusyError, ReplayError, Runtime, UncertainEffect, replay
 from agent_replay.ledger import LedgerTool
 from agent_replay.model import canonical, digest, plan_value
-from agent_replay.storage import writer_lock
+from agent_replay.storage import connection, writer_lock
 
 
 def plan(safe=True):
@@ -140,7 +139,7 @@ class RuntimeTests(unittest.TestCase):
 
     def test_bad_storage_rejected(self):
         self.runtime.submit("run", plan())
-        with sqlite3.connect(self.runtime.store.path) as db:
+        with connection(self.runtime.store.path) as db, db:
             db.execute("UPDATE events SET event='not json'")
         with self.assertRaises(ReplayError):
             self.runtime.inspect("run")
@@ -181,14 +180,14 @@ class RuntimeTests(unittest.TestCase):
 
     def test_storage_run_identity_mismatch(self):
         self.runtime.submit("run", plan())
-        with sqlite3.connect(self.runtime.store.path) as db:
+        with connection(self.runtime.store.path) as db, db:
             db.execute("UPDATE events SET run='other'")
         with self.assertRaises(ReplayError):
             self.runtime.inspect("other")
 
     def test_malformed_event_object(self):
         self.runtime.submit("run", plan())
-        with sqlite3.connect(self.runtime.store.path) as db:
+        with connection(self.runtime.store.path) as db, db:
             db.execute("UPDATE events SET event='null'")
         with self.assertRaises(ReplayError):
             self.runtime.inspect("run")

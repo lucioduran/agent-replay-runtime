@@ -17,7 +17,8 @@ def verify(report, check_sources=True):
     if check_sources:
         paths = sorted([*ROOT.glob("agent_replay/*.py"), *ROOT.glob("experiments/*.py")])
         actual = {
-            str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths
+            p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in paths
         }
         assert report["metadata"]["source_sha256"] == actual, "Source fingerprints differ"
     expected = {
