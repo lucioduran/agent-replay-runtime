@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "metadata": {
-    "timestamp_utc": "2026-10-21T21:29:04.177785+00:00",
+    "timestamp_utc": "2026-10-21T21:30:46.249680+00:00",
     "python": "3.11.13",
     "sqlite": "3.50.4",
     "platform": "macOS-26.7.1-x86_64-i386-64bit",
@@ -13,7 +13,7 @@
       "hw.memsize": "51539607552",
       "hw.ncpu": "16"
     },
-    "revision": "6f711cb717c0f892f8674c16dc3115f83ec0ab34",
+    "revision": "753a57995f6eb8a89659bed5d06acfd4d167f847",
     "source_sha256": {
       "agent_replay/__init__.py": "39979c4ff43d0f08f6775a7ba5801e31bc070246b0a9e531faf2bec785a68bf4",
       "agent_replay/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
@@ -23,8 +23,8 @@
       "agent_replay/runtime.py": "f1ad8eaaaa0a6f907c187b7b7c626a5cda99baba90f170a7d2e01425d206a1e7",
       "agent_replay/storage.py": "b521428f146c9715ee91f1a7b470e98ea7468785e7d8401bab3fa7e7552e0f1e",
       "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "experiments/reproduce.py": "7228bcf4987f73370c53e8b3917d594975d049e3686f2f27b216ca0efde0d5cc",
-      "experiments/verify.py": "f8996799f7d776ea50980839bbe0a0b885e360da4d956a6f2bbcda349ba3a7ed",
+      "experiments/reproduce.py": "0c85870e87ef9ee3737f56cc943431326b1efc97d654225ce95d336ea0605b45",
+      "experiments/verify.py": "b2df75fdb0bf1b3ac7c42f18b383512b16ea5b125f61bf8dd786f511850776c3",
       "experiments/worker.py": "5886e7688d18834697eb162a58350bb771c434e0bba0446749ae1a20d820dfa0"
     },
     "api_calls": 0,
@@ -52,7 +52,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_request/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_request/effects.db:True"
             },
             "plan": [
               {
@@ -67,7 +67,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "hash": "10907f4bfe2fd29dee23a7a26371c9287fb74ec80b9116af1b0cd339e9dbca0f",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -77,9 +77,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "hash": "8ee0da95a4a85e9efb85fa8bfe1b3414a2eea169a72ecced0cef26d0e06868c9",
           "kind": "requested",
-          "previous": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "previous": "10907f4bfe2fd29dee23a7a26371c9287fb74ec80b9116af1b0cd339e9dbca0f",
           "seq": 1
         }
       ],
@@ -106,7 +106,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_request/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_request/effects.db:True"
             },
             "plan": [
               {
@@ -121,7 +121,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "hash": "10907f4bfe2fd29dee23a7a26371c9287fb74ec80b9116af1b0cd339e9dbca0f",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -131,9 +131,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "hash": "8ee0da95a4a85e9efb85fa8bfe1b3414a2eea169a72ecced0cef26d0e06868c9",
           "kind": "requested",
-          "previous": "15f70a13aa305bbfe6dd96028a0fc54db1153939136b5f572f2c0bdbf12d5c22",
+          "previous": "10907f4bfe2fd29dee23a7a26371c9287fb74ec80b9116af1b0cd339e9dbca0f",
           "seq": 1
         },
         {
@@ -141,9 +141,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "00b7287c4f27d4f4f963b2250af05bfb65cb0a003ee4583ce9ca0a5a297bd465",
+          "hash": "1cb7316a0e1c4b5c9ffcb65e6b878213746d22fd4fb23c2057f6efd0cd32aec6",
           "kind": "retried",
-          "previous": "73c6374e9e333c5b25a9994d28d06871b7109729ccd4b8e1725d7bf52f2d9f8f",
+          "previous": "8ee0da95a4a85e9efb85fa8bfe1b3414a2eea169a72ecced0cef26d0e06868c9",
           "seq": 2
         },
         {
@@ -156,16 +156,16 @@
             },
             "step": "effect"
           },
-          "hash": "4407ea7a645981c7b4188f2dd6995447e2b047ad87269dd1b71966c2d6396edb",
+          "hash": "9c546b0c3bbccb2bae0c8993556b603f5398f7790758cb7fd59ea84bfc4b992e",
           "kind": "completed",
-          "previous": "00b7287c4f27d4f4f963b2250af05bfb65cb0a003ee4583ce9ca0a5a297bd465",
+          "previous": "1cb7316a0e1c4b5c9ffcb65e6b878213746d22fd4fb23c2057f6efd0cd32aec6",
           "seq": 3
         },
         {
           "data": {},
-          "hash": "b2f2a329a76cba7cfc5382ba03969cb5a2193233cb9aa7693a78bb367ed8893f",
+          "hash": "ded3929f5ce3800735eadc5c0e94ea6e3529c9079a2ab031159bb39b37eeaa75",
           "kind": "finished",
-          "previous": "4407ea7a645981c7b4188f2dd6995447e2b047ad87269dd1b71966c2d6396edb",
+          "previous": "9c546b0c3bbccb2bae0c8993556b603f5398f7790758cb7fd59ea84bfc4b992e",
           "seq": 4
         }
       ],
@@ -210,7 +210,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_effect/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_effect/effects.db:True"
             },
             "plan": [
               {
@@ -225,7 +225,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "hash": "2c99a7d4bb3353dbd80e9471366d728502dde0345b3ee3a3966ab085d2eef818",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -235,9 +235,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "hash": "0c18ba69611720f44b752ccc531b343c8ce7c7d59367de36578b1217a9a7095e",
           "kind": "requested",
-          "previous": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "previous": "2c99a7d4bb3353dbd80e9471366d728502dde0345b3ee3a3966ab085d2eef818",
           "seq": 1
         }
       ],
@@ -272,7 +272,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_effect/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_effect/effects.db:True"
             },
             "plan": [
               {
@@ -287,7 +287,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "hash": "2c99a7d4bb3353dbd80e9471366d728502dde0345b3ee3a3966ab085d2eef818",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -297,9 +297,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "hash": "0c18ba69611720f44b752ccc531b343c8ce7c7d59367de36578b1217a9a7095e",
           "kind": "requested",
-          "previous": "bc5a1732241576f05e1bd61d8cbbdf6679cc4d05c02376a1edf7e7f771fadb78",
+          "previous": "2c99a7d4bb3353dbd80e9471366d728502dde0345b3ee3a3966ab085d2eef818",
           "seq": 1
         },
         {
@@ -307,9 +307,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "f8303fac12ec0f9d26a4d85feb4bd324a2a28e4fa9d19b4ef20738e33e7058b3",
+          "hash": "15fcf9ae10d35b2bdd0c56b45e2c02bb6e30a88fe41891367fcebdc1aed23484",
           "kind": "retried",
-          "previous": "43c41011f88c80d5379272b280dd6e6c19ef4a7f316a5394f4b3f405fed90e54",
+          "previous": "0c18ba69611720f44b752ccc531b343c8ce7c7d59367de36578b1217a9a7095e",
           "seq": 2
         },
         {
@@ -322,16 +322,16 @@
             },
             "step": "effect"
           },
-          "hash": "6ffe5544cc16712a63bd988d8177a79352fcebef617dee1e53e51a9786ae8ba7",
+          "hash": "c338384df38e6cc889ca6892578fe91a3fe10ea52ed96ea300e8ec36ecbf0457",
           "kind": "completed",
-          "previous": "f8303fac12ec0f9d26a4d85feb4bd324a2a28e4fa9d19b4ef20738e33e7058b3",
+          "previous": "15fcf9ae10d35b2bdd0c56b45e2c02bb6e30a88fe41891367fcebdc1aed23484",
           "seq": 3
         },
         {
           "data": {},
-          "hash": "4932eb223daf72381f25183dbe59662ea37f8f81a9ee425635a258f0f0a405bf",
+          "hash": "3efc98a8a9d90be79388e96498dfeef305d2967c4f01805b7065a55e16910e17",
           "kind": "finished",
-          "previous": "6ffe5544cc16712a63bd988d8177a79352fcebef617dee1e53e51a9786ae8ba7",
+          "previous": "c338384df38e6cc889ca6892578fe91a3fe10ea52ed96ea300e8ec36ecbf0457",
           "seq": 4
         }
       ],
@@ -376,7 +376,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_ack/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_ack/effects.db:True"
             },
             "plan": [
               {
@@ -391,7 +391,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "hash": "a45222a5be49bd6f7dde163e87724d29d378c1c06f1ddcc6287e194e681da12b",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -401,9 +401,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "hash": "75278a0a5d53eef185daaecc4ff8336163a728d2c75053ff7365f08b6f1886e4",
           "kind": "requested",
-          "previous": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "previous": "a45222a5be49bd6f7dde163e87724d29d378c1c06f1ddcc6287e194e681da12b",
           "seq": 1
         },
         {
@@ -416,9 +416,9 @@
             },
             "step": "effect"
           },
-          "hash": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "hash": "2150c96e34da0a6b816097789eeeedfe0a035daa999602d63aaa87c74e49ecd6",
           "kind": "completed",
-          "previous": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "previous": "75278a0a5d53eef185daaecc4ff8336163a728d2c75053ff7365f08b6f1886e4",
           "seq": 2
         }
       ],
@@ -453,7 +453,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/False-after_ack/effects.db:True"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/False-after_ack/effects.db:True"
             },
             "plan": [
               {
@@ -468,7 +468,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "hash": "a45222a5be49bd6f7dde163e87724d29d378c1c06f1ddcc6287e194e681da12b",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -478,9 +478,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "hash": "75278a0a5d53eef185daaecc4ff8336163a728d2c75053ff7365f08b6f1886e4",
           "kind": "requested",
-          "previous": "c4e979a179d0ba813a59b893e1677ba78d74d71b111b1a2291a6e427d90dc7f1",
+          "previous": "a45222a5be49bd6f7dde163e87724d29d378c1c06f1ddcc6287e194e681da12b",
           "seq": 1
         },
         {
@@ -493,16 +493,16 @@
             },
             "step": "effect"
           },
-          "hash": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "hash": "2150c96e34da0a6b816097789eeeedfe0a035daa999602d63aaa87c74e49ecd6",
           "kind": "completed",
-          "previous": "075c4808aeed51aa30f6fa20baae01be0cfff8b5b2f542958f72fd2068a8f751",
+          "previous": "75278a0a5d53eef185daaecc4ff8336163a728d2c75053ff7365f08b6f1886e4",
           "seq": 2
         },
         {
           "data": {},
-          "hash": "ef11efa2eedbbce0291816ca1a5571d37a59d3070f3a0e6699f7247c4386a4ca",
+          "hash": "ea223117cf1a1940a4757f48260709264202b3fe4c29b0ad4884bd57b680079f",
           "kind": "finished",
-          "previous": "b1b0755c678629329ca8c2cd94c7eb45f0b6bbecd430bfb6f47fe0acbfd9de30",
+          "previous": "2150c96e34da0a6b816097789eeeedfe0a035daa999602d63aaa87c74e49ecd6",
           "seq": 3
         }
       ],
@@ -547,7 +547,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_request/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_request/effects.db:False"
             },
             "plan": [
               {
@@ -562,7 +562,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "hash": "eae6f8f601b1af92e11237ed41e06cc5bc5c5cd3b622e45288c77c8a5eb3b5df",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -572,9 +572,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "47dd25d1ae2398dbb0bd2a385341ebcaa1f10007fb1cd285fa4af0f5f93a2839",
+          "hash": "1d9b682d06051805a4f1aee31644fe5cf1e0b034f2dbb63dda921e732aaed552",
           "kind": "requested",
-          "previous": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "previous": "eae6f8f601b1af92e11237ed41e06cc5bc5c5cd3b622e45288c77c8a5eb3b5df",
           "seq": 1
         }
       ],
@@ -591,7 +591,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_request/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_request/effects.db:False"
             },
             "plan": [
               {
@@ -606,7 +606,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "hash": "eae6f8f601b1af92e11237ed41e06cc5bc5c5cd3b622e45288c77c8a5eb3b5df",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -616,9 +616,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "47dd25d1ae2398dbb0bd2a385341ebcaa1f10007fb1cd285fa4af0f5f93a2839",
+          "hash": "1d9b682d06051805a4f1aee31644fe5cf1e0b034f2dbb63dda921e732aaed552",
           "kind": "requested",
-          "previous": "378687da0745fa485b5b04389e8f57fee464338dbf8ccc40d849931e8952548e",
+          "previous": "eae6f8f601b1af92e11237ed41e06cc5bc5c5cd3b622e45288c77c8a5eb3b5df",
           "seq": 1
         }
       ],
@@ -651,7 +651,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_effect/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_effect/effects.db:False"
             },
             "plan": [
               {
@@ -666,7 +666,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "hash": "130acfb73b5ef87b446987394bbc6bcb29422f2c69b66d80780e4a06a05e3636",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -676,9 +676,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "hash": "e1855fe4f453f62730b357dd0f7b234b9784f29d7b4201a3f3a26088612af4f7",
           "kind": "requested",
-          "previous": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "previous": "130acfb73b5ef87b446987394bbc6bcb29422f2c69b66d80780e4a06a05e3636",
           "seq": 1
         }
       ],
@@ -730,7 +730,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_effect/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_effect/effects.db:False"
             },
             "plan": [
               {
@@ -745,7 +745,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "hash": "130acfb73b5ef87b446987394bbc6bcb29422f2c69b66d80780e4a06a05e3636",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -755,9 +755,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "hash": "e1855fe4f453f62730b357dd0f7b234b9784f29d7b4201a3f3a26088612af4f7",
           "kind": "requested",
-          "previous": "d65c3ad379a84b21bf9ed64767220a479d3b37994dba03bb8a6fa32b80d0be44",
+          "previous": "130acfb73b5ef87b446987394bbc6bcb29422f2c69b66d80780e4a06a05e3636",
           "seq": 1
         },
         {
@@ -771,16 +771,16 @@
             },
             "step": "effect"
           },
-          "hash": "d48f7db23064b5b0d9a453df51fe6071b24219957cedd32c119119522bf94600",
+          "hash": "2af9521333115b4df68fd70beba3e74bc2879e6d369f582b616489b90192cbc3",
           "kind": "resolved",
-          "previous": "d830f87cb531d7b1dfd3e85c32c594cda531ebe37364a5f02e752dd3c35bd4f1",
+          "previous": "e1855fe4f453f62730b357dd0f7b234b9784f29d7b4201a3f3a26088612af4f7",
           "seq": 2
         },
         {
           "data": {},
-          "hash": "5ecba9e41244a244bb05a6bf214315faec0eef52e11bd62aa9b5b72994482311",
+          "hash": "b07798c63ffcdd630dcd5dc73ac280bfa6e8f566a662db4924493096eb99796e",
           "kind": "finished",
-          "previous": "d48f7db23064b5b0d9a453df51fe6071b24219957cedd32c119119522bf94600",
+          "previous": "2af9521333115b4df68fd70beba3e74bc2879e6d369f582b616489b90192cbc3",
           "seq": 3
         }
       ],
@@ -825,7 +825,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_ack/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_ack/effects.db:False"
             },
             "plan": [
               {
@@ -840,7 +840,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "hash": "151a3bbae16eebfdeedbfa6acc839e901a82020503fed6b6e08559e5d7496fbf",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -850,9 +850,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "hash": "e101a7d12348947786cdaaedf93e916b438a1dfe01e5eab134c3d01f6d413eb4",
           "kind": "requested",
-          "previous": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "previous": "151a3bbae16eebfdeedbfa6acc839e901a82020503fed6b6e08559e5d7496fbf",
           "seq": 1
         },
         {
@@ -865,9 +865,9 @@
             },
             "step": "effect"
           },
-          "hash": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "hash": "ee71724aba764552e6bd4604a1d37600056f3f2d9f6d6e9f484f64dad7cca7b2",
           "kind": "completed",
-          "previous": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "previous": "e101a7d12348947786cdaaedf93e916b438a1dfe01e5eab134c3d01f6d413eb4",
           "seq": 2
         }
       ],
@@ -902,7 +902,7 @@
         {
           "data": {
             "bindings": {
-              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-h6foos87/True-after_ack/effects.db:False"
+              "ledger": "ledger/v1:/private/var/folders/6x/v56hfn7s5m7gt4t9k54dyg180000gn/T/agent-replay-q64n7gqd/True-after_ack/effects.db:False"
             },
             "plan": [
               {
@@ -917,7 +917,7 @@
             "run": "experiment",
             "version": 1
           },
-          "hash": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "hash": "151a3bbae16eebfdeedbfa6acc839e901a82020503fed6b6e08559e5d7496fbf",
           "kind": "created",
           "previous": "0000000000000000000000000000000000000000000000000000000000000000",
           "seq": 0
@@ -927,9 +927,9 @@
             "key": "836b14c9a928aea0086c4263da58156b0aa3f98dc3f5d235874c5b20520a420e",
             "step": "effect"
           },
-          "hash": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "hash": "e101a7d12348947786cdaaedf93e916b438a1dfe01e5eab134c3d01f6d413eb4",
           "kind": "requested",
-          "previous": "d1888a2ae95d8238189b1b23d42281f33c3f0d3ed8f46e1ccbdde2da253b24e5",
+          "previous": "151a3bbae16eebfdeedbfa6acc839e901a82020503fed6b6e08559e5d7496fbf",
           "seq": 1
         },
         {
@@ -942,16 +942,16 @@
             },
             "step": "effect"
           },
-          "hash": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "hash": "ee71724aba764552e6bd4604a1d37600056f3f2d9f6d6e9f484f64dad7cca7b2",
           "kind": "completed",
-          "previous": "f001246a04629fb321126825bac0a40fb3c91c21c1983664e600d814f49520b1",
+          "previous": "e101a7d12348947786cdaaedf93e916b438a1dfe01e5eab134c3d01f6d413eb4",
           "seq": 2
         },
         {
           "data": {},
-          "hash": "695b24ad2cbf68cda0fefb9594fb4591011c8710222e9ef0d5ff12b3db86148e",
+          "hash": "16100b8c9330d4973bd1e72a4c5ba29f2a8745a58dd23576e2d7f47e531f2a5d",
           "kind": "finished",
-          "previous": "a3edb4e0e191d63d576f658d9634143f4250cc428b944107aa74c13af286c695",
+          "previous": "ee71724aba764552e6bd4604a1d37600056f3f2d9f6d6e9f484f64dad7cca7b2",
           "seq": 3
         }
       ],
